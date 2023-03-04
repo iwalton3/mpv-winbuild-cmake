@@ -7,7 +7,6 @@ ExternalProject_Add(ffmpeg
         gmp
         lame
         libressl
-        libssh
         libsrt
         libass
         libbluray
@@ -80,7 +79,6 @@ ExternalProject_Add(ffmpeg
         --enable-libtls
         --enable-libxml2
         --enable-libmysofa
-        --enable-libssh
         --enable-libsrt
         --enable-libvpl
         --enable-libjxl
