@@ -36,18 +36,19 @@ index 39f8192..9d71986 100644
  endif()
  set_target_properties(ssl PROPERTIES
 diff --git a/tls/CMakeLists.txt b/tls/CMakeLists.txt
-index f64b1c3..71270b1 100644
+index 7827a5e..d248f02 100644
 --- a/tls/CMakeLists.txt
 +++ b/tls/CMakeLists.txt
-@@ -39,7 +39,7 @@ target_include_directories(tls
+@@ -52,7 +52,7 @@ add_library(tls $<TARGET_OBJECTS:tls_obj> $<TARGET_OBJECTS:ssl_obj>
  
- export_symbol(tls ${CMAKE_CURRENT_SOURCE_DIR}/tls.sym)
- target_link_libraries(tls ssl crypto ${PLATFORM_LIBS})
+ export_symbol(tls ${CMAKE_CURRENT_BINARY_DIR}/tls.sym)
+ target_link_libraries(tls ${PLATFORM_LIBS})
 -if (WIN32)
 +if (BUILD_SHARED_LIBS AND WIN32)
  	set(TLS_POSTFIX -${TLS_MAJOR_VERSION})
  endif()
  set_target_properties(tls PROPERTIES
+
 -- 
 2.17.1
 

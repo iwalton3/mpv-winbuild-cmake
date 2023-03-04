@@ -41,7 +41,7 @@ list(APPEND ep
     fontconfig
     libunibreak
     libass
-    mbedtls
+    libressl
     libxml2
     libvpl
     amf-headers

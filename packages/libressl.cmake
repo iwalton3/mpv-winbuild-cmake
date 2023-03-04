@@ -1,6 +1,6 @@
 ExternalProject_Add(libressl
-    URL https://cdn.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.1.5.tar.gz
-    URL_HASH SHA256=2c13ddcec5081c0e7ba7f93d8370a91911173090f1922007e1d90de274500494
+    URL https://cdn.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.7.0.tar.gz
+    URL_HASH SHA256=3fc1290f4007ec75f6e9acecbb25512630d1b9ab8c53ba79844e395868c3e006
     DOWNLOAD_DIR ${SOURCE_LOCATION}
     PATCH_COMMAND patch -p1 -i ${CMAKE_CURRENT_SOURCE_DIR}/libressl-0001-remove-postfix-in-libs-name.patch
     CONFIGURE_COMMAND ${EXEC} cmake -H<SOURCE_DIR> -B<BINARY_DIR>
