@@ -1,3 +1,7 @@
+# Repo is archived because upstream unbroke TLS!!!
+
+https://github.com/shinchiro/mpv-winbuild-cmake/commit/d818aedecf16ab3a0a5650991b934d632d9ca2b7
+
 # CMake-based MinGW-w64 Cross Toolchain
 
 This thing’s primary use is to build Windows binaries of mpv.
